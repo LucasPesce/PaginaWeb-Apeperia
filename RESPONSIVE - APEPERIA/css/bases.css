@@ -1,0 +1,53 @@
+:root{                                              /* Estandarizo variables con atributos deseados*/
+    --background-llamada-mobile: #00161C;
+    --background-blanco: #FFFFFF;
+    --background-azul-claro: #DFE3F5;
+    --background-ceniza-claro: #F7F4F4;
+    --background-ceniza-medio: #D9D9D9;
+    
+    --border-cabecera-mobile: #103D4A;
+    
+    --boton-rojo: #B72E2E;
+    
+    --fuente-ceniza-claro: #666666;
+    --fuente-ceniza-oscuro: #4F4C4C;
+    
+    --planes-card-start: #035A76;
+    --planes-card-ultra: #690F8E;
+    --planes-card-mega: #B00024;
+    
+    --fuente-enlace: #0006FF;
+    
+    --background-footer: #333333;
+
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open sans', sans-serif;
+}
+
+
+body{
+    font-family: var(--open-sans);   /*Letra general de la pagina*/
+}
+
+.container{
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+.boton{
+    text-align: center;                 /* Centra el boton*/
+    display: block;                     /*  Disposicion en bloque*/
+    width: 100%;                        /* Que el ancho ocupe el total del ancho de la pantalla*/
+    max-width: 480px;                   /* Se coloca un limite maximo del ancho del boton*/
+    box-sizing: border-box;             /* Configura el borde del boton*/
+    padding: 1rem 2rem;                 /* Espaciamiento interno*/
+    border: 1px solid var(--boton-rojo);/*Color del borde, tamaño y forma*/
+    border-radius: 5px;                 /* Redondeado del los bordes del boton*/
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
